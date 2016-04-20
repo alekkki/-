@@ -15,6 +15,7 @@ namespace Test_App
         public Form1()
         {
             InitializeComponent();
+            // Simple comment
         }
     }
 }
