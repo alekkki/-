@@ -10,16 +10,19 @@ using System.Windows.Forms;
 
 namespace Test_App
 {
-    public partial class Form1 : Form
+    public partial class FormSniper : Form
     {
-        public Form1()
+        public FormSniper()
         {
             InitializeComponent();
-            // Simple comment
-            // Test 1
-            // Test 2
-            // TEST ALEK
-            Console.WriteLine("Test");
+        }
+
+        private void FormSniper_Load(object sender, EventArgs e)
+        {
+            Image image = Image.FromFile("G:\\1.jpg");
+            pictureBoxMap.Image = image;
+            pictureBoxMap.Height = image.Height;
+            pictureBoxMap.Width = image.Width;
         }
     }
 }
