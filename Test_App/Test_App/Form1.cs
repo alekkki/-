@@ -16,6 +16,8 @@ namespace Test_App
         {
             InitializeComponent();
             // Simple comment
+            // Test 1
+            // Test 2
         }
     }
 }
