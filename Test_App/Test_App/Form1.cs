@@ -23,6 +23,7 @@ namespace Test_App
             pictureBoxMap.Image = image;
             pictureBoxMap.Height = image.Height;
             pictureBoxMap.Width = image.Width;
+            //nk
         }
     }
 }
