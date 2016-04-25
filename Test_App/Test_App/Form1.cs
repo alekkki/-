@@ -18,6 +18,7 @@ namespace Test_App
             // Simple comment
             // Test 1
             // Test 2
+            Console.WriteLine("Test");
         }
     }
 }
