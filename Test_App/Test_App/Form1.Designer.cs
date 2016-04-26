@@ -1,6 +1,6 @@
-﻿namespace Test_App
+namespace Test_App
 {
-    partial class FormSniper
+    partial class FormMap
     {
         /// <summary>
         /// Required designer variable.
@@ -37,30 +37,33 @@
             // panelMap
             // 
             this.panelMap.Controls.Add(this.pictureBoxMap);
-            this.panelMap.Location = new System.Drawing.Point(12, 12);
+            this.panelMap.Location = new System.Drawing.Point(0, -1);
             this.panelMap.Name = "panelMap";
-            this.panelMap.Size = new System.Drawing.Size(373, 278);
+            this.panelMap.Size = new System.Drawing.Size(350, 309);
             this.panelMap.TabIndex = 0;
             // 
             // pictureBoxMap
             // 
-            this.pictureBoxMap.InitialImage = null;
+            this.pictureBoxMap.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBoxMap.Location = new System.Drawing.Point(0, 0);
             this.pictureBoxMap.Name = "pictureBoxMap";
-            this.pictureBoxMap.Size = new System.Drawing.Size(373, 278);
+            this.pictureBoxMap.Size = new System.Drawing.Size(350, 309);
             this.pictureBoxMap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxMap.TabIndex = 0;
             this.pictureBoxMap.TabStop = false;
+            this.pictureBoxMap.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBoxMap_Paint);
+            this.pictureBoxMap.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxMap_MouseMove);
             // 
-            // FormSniper
+            // FormMap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(397, 302);
+            this.ClientSize = new System.Drawing.Size(350, 307);
             this.Controls.Add(this.panelMap);
-            this.Name = "FormSniper";
+            this.DoubleBuffered = true;
+            this.Name = "FormMap";
             this.Text = "Sniper Kill";
-            this.Load += new System.EventHandler(this.FormSniper_Load);
+            this.Load += new System.EventHandler(this.FormMap_Load);
             this.panelMap.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMap)).EndInit();
             this.ResumeLayout(false);
@@ -73,4 +76,3 @@
         private System.Windows.Forms.PictureBox pictureBoxMap;
     }
 }
-
